@@ -1,0 +1,78 @@
+@import "compass/css3";
+
+/*Similar Items*/
+.similarItems{
+	position:			relative;
+	width:				20%;
+	height: 			auto;
+	float:				right;
+	background:			white;
+	background-color:	rgba(255,255,255,0.5);
+	margin:				2em 2% 2em 3%;
+}
+.similarItems .panel{
+	margin:				auto;
+	float:				none;
+	background-color:	rgba(0,0,0,0.8);
+	margin-bottom:		5%;
+}
+.similarItems .itemFig{
+	display:			block;
+	float:				none;
+	padding:			0;
+	margin-right:		auto;
+	margin-left:		auto;
+}
+
+/*comments*/
+.comments{
+	position:			relative;
+	width:				50%;
+	float:				left;
+	background:			white;
+	background-color:	rgba(255,255,255,0.5);
+	margin:				2em 2% 2em 3%;
+	padding-bottom:		6em;
+	
+}
+.comments .panel{
+	position:			relative;
+	float:				left;
+	background:			white;
+	margin:				0 5% 1em 5%;
+	width:				90%;
+	background-color:	rgba(255,255,255,0.8);
+	padding-bottom:		6em;
+}
+.comments .ptext {
+	position:			absolute;
+	margin-left:		3em;
+}
+.commentBtn{
+	position:			absolute;
+	bottom:				0;
+	right:				0;
+	background-color:	rgba(255,255,255,0.8);
+	border: 			none;
+	padding: 			1em 2em;
+	margin-right:		1em;
+	margin-bottom:		1em;
+	text-align: 		center;
+    text-decoration: 	none;
+    font-size: 			1.4em;
+	color: 				black;
+}
+.commentBtn:hover{
+	color: 				black;
+	background-color: 	white;
+	border:				2px solid black;
+}
+#commentBox{
+	position:			relative;
+	float:				left;
+	background:			white;
+	margin:				1em 5% 1em 5%;
+	width:				90%;
+	background-color:	rgba(255,255,255,0.5);
+	padding-bottom:		6em;
+}

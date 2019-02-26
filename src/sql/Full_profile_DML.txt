@@ -1,0 +1,8 @@
+INSERT INTO customer (email, fName, lName, address, cPassword, phoneNum, isAdmin, disabled)
+VALUES ('user@gmail.com', '$fName','$lName', 'address','password', '$123', '0', '0');
+
+INSERT INTO `creditcard`(`cardNum`, `cardExpired`, `CVV`, `bAddress`, `cid`) 
+VALUES (123456789, CURDATE(), 111, bAddress, 1);
+
+INSERT INTO `orders`(`purchased`, `purchasedDate`, `cardNum`) 
+VALUES (123, CURDATE(), 123456789);

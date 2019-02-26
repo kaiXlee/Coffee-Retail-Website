@@ -1,0 +1,225 @@
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+  overflow:auto;
+	text-align: left;
+	font:  20px 'myFirstFont';
+  letter-spacing: 2px;
+	padding: 30px 40px;
+  margin-top: 50px;
+	margin-left: 0;
+	margin-right: 0;
+	bottom:0;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 35%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 40px 'myFirstFont', cursive;
+	margin: 20px;
+}
+
+.footer-distributed h3 span{
+	color:  yellow;
+  margin-left: 10px;
+
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin:5px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 40%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #292c2f;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 20px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:13px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.mapmarker{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/wayn.png);
+  background-size: contain;
+}
+.phone{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/map.png);
+  background-size: contain;
+}
+.envelope{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/etsy.png);
+  background-size: contain;
+}
+.facebook{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/facebook-logo.png);
+  background-size: contain;
+}
+.twitter{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/twitter-logo.png);
+  background-size: contain;
+}
+.linkedin{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/linkedin-logo.png);
+  background-size: contain;
+}
+.instagram{
+  display: inline-block;
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+  background-image: url(../images/logos/instagram-logo.png);
+  background-size: contain;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}

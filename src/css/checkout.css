@@ -1,0 +1,110 @@
+body{
+	overflow:			auto;
+	font-family: myFirstFont;
+	margin: auto;
+}
+.cartbg{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.buttons{
+	margin-top: 2%;
+}
+
+.titlecontent{
+	text-align: center;
+	color: white;
+	  font-size: 3vw;
+
+}
+.checkout{
+	margin-left: 15%;
+	clear: both;
+
+}
+
+.checkout,a{
+		text-decoration: none;
+}
+.carttitle{
+
+  margin: 0em;
+  padding: 0em;
+  width: 100%;
+
+
+}
+
+.item{
+  height: 5em;
+  background-color: white;
+  color: black;
+  clear: left;
+	width: 70%;
+	margin-left: 15%;
+
+}
+.col{
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.image{
+  width: 20%;
+}
+
+.description{
+  width: 20%;
+  margin-top: 1.5em;
+}
+
+.quantity{
+  width:25%;
+  margin-top: 1.5em;
+}
+
+.total-price{
+  width: 15%;
+  margin-top: 1.5em;
+}
+
+.subtotal{
+  clear: left;
+  margin-left: 60%;
+  font-size: 1.5em;
+  font-weight: bold;
+  float: left;
+}
+
+.subvalue{
+  float: left;
+  margin-left: 3%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.payment{
+  background-color: white;
+  clear: left;
+  color: black;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.po{
+  border-bottom: 1px solid black;
+}
+
+.total{
+	color: white;
+	font-size: 2vw;
+	text-align: center;
+	background-color: black;
+}

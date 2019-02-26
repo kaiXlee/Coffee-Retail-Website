@@ -1,0 +1,142 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url("../DK Lemon Yellow Sun.otf");
+	font-style: bold;
+	font-weight: bold;
+}
+html{
+	background-image: 	url(../images/background2.jpg);
+	background-size:100%;
+}
+
+body{
+	overflow:			auto;
+	font-family: myFirstFont;
+	margin: 			auto;
+}
+.productInfo{
+	text-align: left;
+  color: white;
+  width: 90%;
+  font-size: 130%;
+	opacity:0.9;
+	margin: auto;
+  background-color: black;
+	padding-top:1em;
+	padding-bottom:1em;
+	padding-left: 1em;
+	height: 14em;
+	clear: both;
+	line-height: 1.5em;
+}
+.productImg{
+	float: left;
+	width:				inherit;
+	height:				inherit;
+}
+
+.productTitle{
+	text-align: center;
+	color: white;
+	font-size: 400%;
+	padding: 2em, 2em;
+	width:				inherit;
+	height:				inherit;
+}
+/*Advertisement windows*/
+.advertisements{
+	position: relative;
+	width:				100%;
+	margin-top:			2em;
+	overflow:			hidden;
+}
+.flipAdd{
+	width:				30%;
+	height:				16em;
+	margin-left:		3%;
+	float:				left;
+
+}
+.flipAdd > .front{
+	position:			absolute;
+	-webkit-transform:	perspective(70em) rotateY(0deg);
+	transform:			perspective(70em) rotateY(0deg);
+	width:				inherit;
+	height:				inherit;
+	border-radius:		2em;
+	backface-visibility:hidden;
+	-webkit-transition:	transform .5s linear 0s;
+	transition:			transform .5s linear 0s;
+	overflow: hidden;
+	/*background-color:	rgba(255,255,255,0.5);*/
+}
+.flipAdd > .back{
+	position:			absolute;
+	-webkit-transform:	perspective(70em) rotateY(180deg);
+	transform:			perspective(70em) rotateY(180deg);
+	background:			white;
+	width:				inherit;
+	height:				inherit;
+	border-radius:		2em;
+	backface-visibility:hidden;
+	-webkit-transition:	transform .5s linear 0s;
+	transition:			transform .5s linear 0s;
+	background-color:	rgba(255,255,255,0.5);
+	overflow: hidden;
+}
+.flipAdd:hover > .front{
+	-webkit-transform:	perspective(70em) rotateY(-180deg);
+	transform:			perspective(70em) rotateY(-180deg);
+}
+.flipAdd:hover > .back{
+	-webkit-transform:	perspective(70em) rotateY(0deg);
+	transform:			perspective(70em) rotateY(0deg);
+}
+.addImg {
+	max-width:			100%;
+	max-height:			100%;
+	border-radius:		inherit;
+}
+.addDesc {
+	padding:			3em;
+}
+
+.addButton{
+	position:			absolute;
+	bottom:				3em;
+	background-color:	rgba(255,255,255,0.8);
+    border: 			none;
+	font-size:			1em;
+    padding: 			1em 2em;
+}
+
+.flipAdd .addCart{
+	right:				3em;
+}
+.flipAdd .viewItem {
+	right:				13em;
+}
+.flipAdd .viewItem:hover {
+	background-color: 	rgba(0,0,0,0.7);
+	border: 			3px solid black;
+	color:				white;
+}
+/*Recommended*/
+.recommendeditems{
+	position:			relative;
+	width:				30%;
+	float:				left;
+	background:			white;
+	background-color:	rgba(255,255,255,0.5);
+	margin:				2em 2em 2em 2em;
+}
+
+/*Deals*/
+.deals{
+	position:			relative;
+	width:				60%;
+	float:				right;
+	background:			white;
+	background-color:	rgba(255,255,255,0.5);
+	margin:				2em 2em 2em 2em;
+}

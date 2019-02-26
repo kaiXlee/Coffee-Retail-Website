@@ -1,0 +1,29 @@
+table{
+  background-color: white;
+  margin-top: 2em;
+  clear: both;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.required{
+	font-family: sans-serif;
+	width: 90%;
+  border-radius:0.3em;
+  border: 1px solid Gray;
+  height: 2em;
+}
+
+.title{
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+.part{
+  background-color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}

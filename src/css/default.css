@@ -1,0 +1,83 @@
+.deals h2{
+	width:				90%;
+	margin:				1em 5% 0.5em 5%;
+}
+
+/*Item Panels*/
+.panel{
+	position:			relative;
+	float:				left;
+	background:			white;
+	margin:				1em 5% 1em 5%;
+	width:				90%;
+	overflow:			hidden;
+	min-width:			10em;
+}
+.itemFig{
+	position:			relative;
+	float:				left;
+	width:				10em;
+	height:				10em;
+	margin-top:			2em;
+	z-index:			1;
+}
+.itemFig > img{
+	width:				inherit;
+	height:				inherit;
+}
+.itemFig > figcaption{
+	position:			absolute;
+	bottom:				0;
+	left:				0;
+	right:				0;
+	color:				white;
+	background-color:	rgba(0,0,0,0.7);
+}
+figcaption > .viewItem{
+	color:				white;
+	background:			none;
+	border:				none;
+	text-align:			left;
+	width:				10em;
+}
+figcaption > .viewItem:hover{
+	color: 				black;
+	background-color: 	white;
+	border:				2px solid black;
+}
+.panel .itemDesc{
+	position:			relative;
+	background-color:	rgba(0,0,0,0.8);
+	color:				white;
+	margin:				1em 1em 1em 1em;
+	min-height:			7em;
+	padding-bottom:		4em;
+	padding-left:		1em;
+	padding-right:		1em;
+	padding-top:		1em;
+}
+.panel .addCart{
+	position:			absolute;
+	bottom:				1em;
+	right:				1em;
+	background-color:	rgba(255,255,255,0.8);
+    border: 			none;
+    padding: 			0.5em 1em;
+}
+.addCart {
+    text-align: 		center;
+    text-decoration: 	none;
+    font-size: 			1em;
+	color: 				black;
+}
+.addCart:hover {
+	background-color: 	rgba(0,0,0,0.7);
+	border: 			3px solid black;
+	color:				white;
+}
+.viewItem {
+	text-align: 		center;
+    text-decoration: 	none;
+    font-size: 			1em;
+	color: 				black;
+}

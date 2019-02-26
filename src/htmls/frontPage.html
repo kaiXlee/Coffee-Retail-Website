@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>IDEAS</title>
+  <link rel="stylesheet" href="../css/mainPage.css" />
+  <link rel="stylesheet" href="../css/header.css"/>
+  <link rel="stylesheet" href="../css/default.css"/>
+  <link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<body>
+  <header>
+    <div class = "nav">
+      <!-- LOGO -->
+      <div class = "logoImage">
+        <a href = "frontPage.html" id = "logo">
+          <img class = "logoimg" alt = "logo" src= "../images/logos/logo.png">
+        </a>
+      </div>
+
+      <!-- search -->
+      <div class = "navLeft">
+        <input type = "text" class ="search">
+        <input type = "submit" value="" class = "submit">
+      </div>
+
+      <!-- cart -->
+      <div class = "navRight">
+        <a href = "cart.html" id = "cart">cart </a>
+      </div>
+
+      <!-- account -->
+      <div class = "navRight">
+        <div class="dropdown">
+          <button class="dropbtn">account</button>
+            <div class="dropdown-content">
+              <div class = "signIn">
+              <a href = "signin.html" id = "sign">sign in</a>
+                <ul class = "logIn">
+                  <a href="account.html"><li class = "youraccount">Your Account</li></a>
+                  <a href="orders.html"><li class = "yourorder">Your Orders</li></a>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- menu -->
+      <div class = "navRight">
+        <div class="dropdown">
+          <button class="dropbtn">menu</button>
+            <div class="dropdown-content">
+              <div class = "drinkMenu">
+                <p id = "beverages">beverages </a>
+                  <ul class = "subMenu">
+                    <!-- <li class = "beverageImg"> -->
+                      <!-- <img src = "../images/logo.png" alt "beverage"> -->
+                    <!-- </li> -->
+                    <a href="coffee.html"><li class = "coffee">coffee</li></a>
+                    <a href="tea.html"><li class = "tea">tea</li></a>
+                    <a href="pop.html"><li calss = "pop">soft drinks</li></a>
+                  </ul>
+              </div>
+              <div class = "foodMenu">
+                <p id = "food">food</p>
+                  <ul class = "subMenu">
+                    <a href="cookie.html"><li class = "cookie">cookie</li></a>
+                    <a href="muffin.html"><li class = "muffin">muffin</li></a>
+                    <a href="donut.html"><li class = "donut">donut</li></a>
+                  </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- team members (us) -->
+      <div class = "navRight">
+        <a href = "aboutus.html" id = "aboutUs">about us </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- advertisements -->
+  <div class = "advertisements">
+	<div class = "flipAdd">
+		<div class="front"><img class = "addImg" alt = "addImg" src= "../images/cookies/cranberrycookie.jpg"></div>
+		<div class="back">
+			<p class="addDesc">Try out these delicious cranberry cookies!</p>
+			<button type="button" class="viewItem"><a href="item.html">View Item</a></button>
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</div>
+	</div>
+	<div class = "flipAdd">
+		<div class="front"><img class = "addImg" alt = "addImg" src= "../images/coffee/cafe-mocha.jpg"></div>
+		<div class="back">
+			<p class="addDesc">Try out this delicious cafe-mocha!</p>
+			<button type="button" class="viewItem"><a href="item.html">View Item</a></button>
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</div>
+	</div>
+	<div class = "flipAdd">
+		<div class="front"><img class = "addImg" alt = "addImg" src= "../images/tea/chai.jpg"></div>
+		<div class="back">
+			<p class="addDesc">Try out this delicious chai tea!</p>
+			<button type="button" class="viewItem"><a href="item.html">View Item</a></button>
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</div>
+	</div>
+  </div>
+
+  <!-- recommended items -->
+  <div class = "recommendeditems">
+	<h2>Recommended Items</h2>
+  	<div class = "panel">
+		<figure class="itemFig">
+			<img src="../images/coffee/americano.jpg" alt="americano">
+			<figcaption><a href="item.html">Americano</a></figcaption>
+		</figure>
+		<p class="itemDesc">This is an item description. It is a very good description and now you want to buy this item!
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</p>
+	</div>
+	<div class = "panel">
+		<figure class="itemFig">
+			<img src="../images/tea/applecider.jpg" alt="applecider">
+			<figcaption><a href="item.html">Apple Cider</a></figcaption>
+		</figure>
+		<p class="itemDesc">This is an item description. It is a very good description and now you want to buy this item!
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</p>
+	</div>
+	<div class = "panel">
+			<figure class="itemFig">
+				<img src="../images/cookies/chocolatechipcookie.jpg" alt="chocolatechipcookie">
+				<figcaption><a href="item.html">Chocolate Chip Cookie</a></figcaption>
+			</figure>
+			<p class="itemDesc">This is an item description. It is a very good description and now you want to buy this item!
+				<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+			</p>
+	</div>
+	<div class = "panel">
+			<figure class="itemFig">
+				<img src="../images/muffins/bananamuffin.jpg" alt="bananamuffin">
+				<figcaption><a href="item.html">Banana Muffin</a></figcaption>
+			</figure>
+			<p class="itemDesc">This is an item description. It is a very good description and now you want to buy this item!
+				<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+			</p>
+	</div>
+	</div>
+
+  <!-- deals -->
+  <div class = "deals">
+	<h2>Deals</h2>
+	<div class = "panel">
+		<figure class="itemFig">
+			<img src="../images/coffee/americano.jpg" alt="americano">
+			<figcaption><a href="item.html">Americano</a></figcaption>
+		</figure>
+		<p class="itemDesc">This item is popular right now! Check it out!
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</p>
+	</div>
+	<div class = "panel">
+		<figure class="itemFig">
+			<img src="../images/tea/applecider.jpg" alt="applecider">
+			<figcaption><a href="item.html">Apple Cider</a></figcaption>
+		</figure>
+		<p class="itemDesc">This is a new item. Try it out!
+			<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+		</p>
+	</div>
+	<div class = "panel">
+			<figure class="itemFig">
+				<img src="../images/cookies/chocolatechipcookie.jpg" alt="chocolatechipcookie">
+				<figcaption><a href="item.html">Chocolate Chip Cookie</a></figcaption>
+			</figure>
+			<p class="itemDesc">This item is on a clearout sale of 50% off! Buy it while it lasts!
+				<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+			</p>
+	</div>
+	<div class = "panel">
+			<figure class="itemFig">
+				<img src="../images/muffins/bananamuffin.jpg" alt="bananamuffin">
+				<figcaption><a href="item.html">Banana Muffin</a></figcaption>
+			</figure>
+			<p class="itemDesc">This item is on sale for 20% off! You should buy it while it's on special!
+				<button type="button" class="addToCart"><a href="cart.html">Add to Cart</a></button>
+			</p>
+
+	</div>
+  </div>
+  <div class = "popular items"></div>
+
+
+  <!-- company names / copyright / info etc etc -->
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>Caffeine<span>Holic</span></h3>
+  			<p class="footer-links">
+					<a href="frontPage.html">Home</a>·
+					<a href="#">Blog</a>·
+					<a href="#">Pricing</a>·
+					<a href="#">About</a>·
+					<a href="#">Faq</a>·
+					<a href="#">Contact</a>
+				</p>
+			  <p class="footer-company-name">Caffeine Holic &copy; 2018</p>
+  			</div>
+
+  			<div class="footer-center">
+  				<div>
+  					<i class="mapmarker"></i>
+  					<p><span>3333 University Way</span> Kelowna, BC</p>
+  				</div>
+
+  				<div>
+  					<i class="phone"></i>
+  					<p>+1 778 581 3502</p>
+  				</div>
+
+  				<div>
+  					<i class="envelope"></i>
+  					<p><a href="mailto:khyy37@hotmail.com">khyy37@hotmail.com</a></p>
+  				</div>
+  			</div>
+
+  			<div class="footer-right">
+  				<p class="footer-company-about">
+  					<span>ABOUT THE COMPANY</span>
+  					     Opened in October 2018, Kelowna BC.<br>
+                 Amazing coffee, tea, snacks<br>
+                 Best coffee in town.
+  				</p>
+
+  				<div class="footer-icons">
+  					<a href="#"><i class="facebook"></i></a>
+  					<a href="#"><i class="twitter"></i></a>
+  					<a href="#"><i class="linkedin"></i></a>
+            <a href="#"><i class="instagram"></i></a>
+  				</div>
+  			</div>
+  		</footer>
+  </body>
+  </html>

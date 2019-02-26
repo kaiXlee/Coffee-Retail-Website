@@ -1,0 +1,160 @@
+@font-face {
+	font-family: myFirstFont;
+	src: url("../DK Lemon Yellow Sun.otf");
+	font-style: bold;
+	font-weight: bold;
+}
+*{
+  font-family: myFirstFont;
+}
+
+.nav{
+	position: relative;
+  height: 6em;
+  width: 100%;
+  padding: 0;
+  background-color: white;
+  opacity: 0.9;
+	z-index:		200;
+	overflow: hidden;
+	margin-bottom: 3em;
+
+}
+.search[type=text]{
+	width: 60%;
+	padding-left: 0.4em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+  height: 1em;
+	font-size: 170%;
+
+}
+.submit[type=submit]{
+  width: 10%;
+	height: 2.5em;
+  background-image: url('../images/logos/searchicon.png');
+  background-size:contain;
+}
+/* .searchCategory{
+
+} */
+.logoimg{
+  height: 6em;
+}
+.logoImage{
+  display: block;
+  float: left;
+  height: inherit;
+  list-style: none;
+  padding-right: 2em;
+}
+.navLeft{
+  float: left;
+  height: inherit;
+  list-style: none;
+  padding-right: 2em;
+  display: inline-block;
+  margin-top: 2em;
+  overflow: auto;
+  width: 20em;
+}
+.navRight{
+  height: inherit;
+  float: right;
+  padding-right: 1em;
+  list-style: none;
+  margin-top: 1em;
+  font-size: 200%;
+  display: inline-block;
+
+}
+
+#cart, #account, #menu, #aboutUs{
+  text-decoration: none;
+  color:	#8B4513	;
+}
+
+
+.dropbtn {
+    font-size: 100%;
+    font-weight: bold;
+    background-color:inherit;
+    color:	#8B4513	;
+    border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    font-size: 80%;
+    margin:0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: inherit;
+
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    width: inherit;
+    margin:0;
+    padding:0;
+
+}
+/* Links inside the dropdown */
+.dropdown-content a, #beverages, #food {
+    padding-right: 2em;
+    margin:0;
+    text-decoration: none;
+    display: block;
+    margin-top: 1em;
+    color: black;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: 	#DCDCDC;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.subMenu{
+  padding:0;
+  margin: 0;
+  list-style: none;
+  width:inherit;
+  height: inherit;
+  font-size: 70%;
+}
+.logIn{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  width:inherit;
+  height: inherit;
+  font-size: 70%;
+}
+.drinkMenu{
+  float: left;
+  margin: 0;
+  height: inherit;
+}
+.foodMenu{
+  margin: 0;
+  height: inherit;
+  float:right;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+  background-color: white;
+} */

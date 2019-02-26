@@ -1,0 +1,21 @@
+#listingTable{
+  text-align: center;
+  color: white;
+  width: 90%;
+  font-size: 200%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  opacity: 0.8;
+  padding: 1em 2em;
+  position: relative;
+}
+#menupic{
+  width: 5em;
+  height: 4em;
+}
+.addCart{
+  position: relative;
+  bottom: auto;
+  top:auto;
+}

@@ -1,0 +1,95 @@
+DROP TABLE IF EXISTS usercomments;
+DROP TABLE IF EXISTS orderContains;
+DROP TABLE IF EXISTS rating;
+DROP TABLE IF EXISTS productimage;
+DROP TABLE IF EXISTS shipment;
+DROP TABLE IF EXISTS orders;
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS creditcard;
+DROP TABLE IF EXISTS customer;
+
+CREATE TABLE customer(
+	cid INT NOT NULL AUTO_INCREMENT,
+    email VARCHAR(50) NOT NULL,
+	fName VARCHAR(50) NOT NULL,
+	lName VARCHAR(50) NOT NULL,
+	address VARCHAR(100) NOT NULL, 
+	cPassword VARCHAR(100) NOT NULL,
+	phoneNum VARCHAR(20) NOT NULL,
+	isAdmin INT NOT NULL,
+	disabled INT NOT NULL,
+	PRIMARY KEY (cid, email)
+);
+CREATE TABLE creditcard (
+	cardNum INT NOT NULL,
+	cardExpired DATE NOT NULL,
+	CVV INT NOT NULL,
+	bAddress VARCHAR(100) NOT NULL,
+	cid INT,
+	PRIMARY KEY (cardNum),
+	FOREIGN KEY (cid) REFERENCES customer(cid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+CREATE TABLE product (
+	pid INT NOT NULL AUTO_INCREMENT,
+	pname VARCHAR(50) NOT NULL,
+	price DECIMAL(5,2),
+    description VARCHAR(1000),
+    imageURL VARCHAR(500),
+	category VARCHAR(20),
+	amountLeft INT NOT NULL,
+	sale INT NOT NULL,
+	rating DOUBLE(4, 2),
+	PRIMARY KEY (pid)
+);
+CREATE TABLE orders (
+	oid INT NOT NULL AUTO_INCREMENT,
+	purchasedDate DATETIME NOT NULL,
+    cardNum INT NOT NULL,
+    cid INT,
+    trackingNum INT,
+	status VARCHAR(100) NOT NULL,
+    PRIMARY KEY (oid),
+	FOREIGN KEY (cardNum) REFERENCES creditcard(cardNum) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY (cid) REFERENCES customer(cid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE shipment (
+	trackingNum INT(20) NOT NULL,
+	shipDate DATE NOT NULL,
+	weight DOUBLE NOT NULL,
+    cid INT NOT NULL,
+    oid INT NOT NULL,
+	PRIMARY KEY (trackingNum),
+	FOREIGN KEY (cid) REFERENCES customer(cid) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY (oid) REFERENCES orders(oid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE productimage (
+	imageID INT NOT NULL ,
+	fileName VARCHAR(20) NOT NULL,
+	fileType VARCHAR(50) NOT NULL,
+    pid INT NOT NULL,
+	PRIMARY KEY (imageID),
+	FOREIGN KEY (pid) REFERENCES product(pid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE ordercontains (
+	quantity INT,
+	price INT,
+    oid INT NOT NULL,
+    pid INT NOT NULL,
+    PRIMARY KEY (oid, pid),
+	FOREIGN KEY (oid) REFERENCES orders(oid) ON UPDATE CASCADE ON DELETE CASCADE,
+	FOREIGN KEY (pid) REFERENCES product(pid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE usercomments(
+	commentsId INT NOT NULL AUTO_INCREMENT,
+    	pid INT NOT NULL,
+	cid INT NOT NULL,
+	content VARCHAR(1000) NOT NULL,
+    	userrating INT NOT NULL,
+	PRIMARY KEY (commentsId, pid, cid),
+    FOREIGN KEY (cid) REFERENCES customer(cid) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (pid) REFERENCES product(pid) ON UPDATE CASCADE ON DELETE CASCADE
+);

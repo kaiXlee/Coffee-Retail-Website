@@ -1,0 +1,62 @@
+body{
+	overflow:			auto;
+	font-family: myFirstFont;
+	margin: auto;
+}
+fieldset{
+  margin: 2em 40%;
+  height: 25em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  font-weight: bold;
+}
+ h1{
+   padding: 0;
+   margin-bottom: 0.5em;
+   margin-top: 0;
+ }
+
+button.denglu{
+  width: 95%;
+  border-radius:0.3em;
+  border: 1px solid Gray;
+  height: 2em;
+}
+
+.required{
+	font-family: sans-serif;
+	width: 95%;
+	border-radius:0.3em;
+	border: 1px solid Gray;
+	height: 2em;
+}
+
+
+button.denglu{
+  background-color: Khaki;
+}
+
+label{
+  font-weight: bold;
+}
+
+p.change{
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid black;
+/*  color: Gainsboro;*/
+}
+
+a.change{
+  text-decoration: none;
+/*  color:lightsteelblue;*/
+}
+
+.signinbg{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width:  100%;
+  height: 100%;
+  z-index: -1;
+}

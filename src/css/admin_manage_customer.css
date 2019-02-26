@@ -1,0 +1,36 @@
+
+#listcustomer{
+	background-color: white;
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+	margin-top: 2em;
+
+
+
+}
+td{
+	border: 1px black solid;
+	font-size: 1vw;
+}
+th{
+	font-size: 2vw;
+}
+
+a{
+	text-decoration: none;
+
+}
+.red{
+	color: red;
+}
+
+.blue{
+	color: blue;
+}
+
+.back{
+	font-size: 2vw;
+	color: brown;
+	padding-top: 50%;
+}
